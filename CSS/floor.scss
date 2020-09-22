@@ -1,0 +1,134 @@
+@import "_variables";
+
+section#floor.floor {
+  width: 100%;
+
+  div.inner {
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    div.floor-txt-wrapper {
+
+      width: 480px;
+      background-color: $backGroundAccent;
+      color: $fontColorSecondary;
+      padding: 80px 40px;
+      height: auto;
+      position: absolute;
+
+      .section-ttl {
+        margin: 0 auto 20px;
+        text-align: left;
+        font-size: 40px;
+      }
+
+      h3#floor-ttl.floor-ttl {
+        font-size: 24px;
+        letter-spacing: 2px;
+        line-height: 28px;
+        margin-bottom: 20px;
+
+      }
+
+      p#floor-txt.floor-txt {
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 28px;
+      }
+    }
+
+    .floor-items {
+      width: 70%;
+      margin-left: auto;
+
+      ul#floor-img-wrapper.floor-img-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .floor-item {
+          width: 48%;
+          height: auto;
+          margin-bottom: 40px;
+
+          img.floor-img {
+            width: 100%;
+
+          }
+        }
+      }
+    }
+
+  }
+}
+/* タブレット用レスポンシブ===================*/
+@media(max-width:900px) {
+  section#floor.floor {
+    width: 100%;
+margin-bottom: 0;
+    div.inner {
+      width: 90%;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      div.floor-txt-wrapper {
+
+        background-color: $backGroundAccent;
+        color: $fontColorSecondary;
+        padding: 80px 40px;
+        height: auto;
+        position: static;
+
+        .section-ttl {
+          margin: 0 auto 20px;
+          text-align: left;
+          font-size: 32px;
+        }
+
+        h3#floor-ttl.floor-ttl {
+          font-size: 22px;
+          letter-spacing: 2px;
+          line-height: 28px;
+          margin-bottom: 20px;
+
+        }
+
+        p#floor-txt.floor-txt {
+          font-size: 16px;
+          letter-spacing: 2px;
+          line-height: 28px;
+        }
+      }
+
+      .floor-items {
+        width: 100%;
+        margin: 40px auto;
+
+        ul#floor-img-wrapper.floor-img-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .floor-item {
+            width: 48%;
+            height: auto;
+            margin-bottom: 40px;
+
+            img.floor-img {
+              width: 100%;
+
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
