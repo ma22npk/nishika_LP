@@ -1,0 +1,137 @@
+@import "_variables";
+
+/*============================
+#access
+============================*/
+section#access.access {
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  div.inner {
+
+    width: 80%;
+    margin: 0 auto;
+
+    h3.section-ttl {
+      font-size: 48px;
+      color: $fontColorGold;
+      margin: 0 auto 80px ;
+      text-align: center;
+    }
+
+    .gmap {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 50%;
+      position: relative;
+
+      iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+
+    div.access-txt-wrapper {
+      margin: 40px auto;
+
+      ul.access-lists {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .access-list {
+          padding: 20px 10px;
+          width: 25%;
+          text-align: center;
+
+          dt.access-list-ttl {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: $fontColorGold;
+          }
+
+          dd.access-list-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+/* スマホ用レスポンシブ======================*/
+@media(max-width:670px) {
+
+  /*============================
+#access
+============================*/
+  section#access.access {
+padding-top: 0;
+    margin-bottom: 0;
+
+    div.inner {
+
+      width: 80%;
+      margin: 0 auto;
+
+      h3.section-ttl {
+        font-size: 40px;
+        color: $fontColorGold;
+        margin: 0 auto 40px;
+        text-align: center;
+      }
+
+      .gmap {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 50%;
+        position: relative;
+
+        iframe {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+
+      div.access-txt-wrapper {
+        margin: 40px auto;
+
+        ul.access-lists {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          line-height: 24px;
+
+          .access-list {
+            padding: 20px 10px;
+            width: 100%;
+            text-align: center;
+
+            dt.access-list-ttl {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+
+            dd.access-list-description {
+              font-size: 16px;
+              margin-bottom: 20px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+;

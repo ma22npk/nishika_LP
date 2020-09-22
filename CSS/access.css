@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*============================
+#access
+============================*/
+section#access.access {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+section#access.access div.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#access.access div.inner h3.section-ttl {
+  font-size: 48px;
+  color: #e8bf65;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+section#access.access div.inner .gmap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+section#access.access div.inner .gmap iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+section#access.access div.inner div.access-txt-wrapper {
+  margin: 40px auto;
+}
+
+section#access.access div.inner div.access-txt-wrapper ul.access-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#access.access div.inner div.access-txt-wrapper ul.access-lists .access-list {
+  padding: 20px 10px;
+  width: 25%;
+  text-align: center;
+}
+
+section#access.access div.inner div.access-txt-wrapper ul.access-lists .access-list dt.access-list-ttl {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #e8bf65;
+}
+
+section#access.access div.inner div.access-txt-wrapper ul.access-lists .access-list dd.access-list-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* スマホ用レスポンシブ======================*/
+@media (max-width: 670px) {
+  /*============================
+#access
+============================*/
+  section#access.access {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  section#access.access div.inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+  section#access.access div.inner h3.section-ttl {
+    font-size: 40px;
+    color: #e8bf65;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  section#access.access div.inner .gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+  }
+  section#access.access div.inner .gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  section#access.access div.inner div.access-txt-wrapper {
+    margin: 40px auto;
+  }
+  section#access.access div.inner div.access-txt-wrapper ul.access-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 24px;
+  }
+  section#access.access div.inner div.access-txt-wrapper ul.access-lists .access-list {
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+  }
+  section#access.access div.inner div.access-txt-wrapper ul.access-lists .access-list dt.access-list-ttl {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  section#access.access div.inner div.access-txt-wrapper ul.access-lists .access-list dd.access-list-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=access.css.map */
