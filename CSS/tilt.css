@@ -1,0 +1,10 @@
+.tilt {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.tilt-child {
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+/*# sourceMappingURL=tilt.css.map */
