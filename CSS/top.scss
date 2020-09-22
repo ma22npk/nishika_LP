@@ -1,0 +1,140 @@
+@import "_variables";
+
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: bgAnime 28s infinite;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: right center;
+  /* 4画像 × 各7s = 28s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image: url(/images/top/top_bg1.png);
+  /* 背景の画像を指定 */
+}
+
+.box .src2 {
+  background-image: url(/images/top/top_bg2.png);
+  /* 背景の画像を指定 */
+  animation-delay: 7s;
+}
+
+.box .src3 {
+  background-image: url(/images/top/top_bg3.png);
+  /* 背景の画像を指定 */
+  animation-delay: 14s;
+}
+
+.box .src4 {
+  background-image: url(/images/top/top_bg4.png);
+  /* 背景の画像を指定 */
+  animation-delay: 21s;
+}
+
+@keyframes bgAnime {
+  0% {
+    opacity: 0;
+    transform: scale(1.0, 1.0);
+    z-index: 10
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1.08, 1.08);
+    z-index: 10
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1.12, 1.12);
+    z-index: 9
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.16, 1.16);
+    z-index: 9
+  }
+
+  80% {
+    opacity: 0;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.24, 1.24);
+  }
+}
+
+/* --- 前面の文字定義（サンプルのため変更してください） ----- */
+.box .boxString {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  padding-left: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+top: 0;
+left: 0;
+}
+
+/*============================
+#top
+============================*/
+section#top.top {
+  margin-top: 50px;
+  width: 100%;
+  background-size: cover;
+  height: 640px;
+  background-position: right center;
+
+  div.inner {
+    img.top-logo {
+      width: 480px;
+      height: auto;
+    }
+
+    h2.top-txt {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+/* タブレット用レスポンシブ===================*/
+@media(max-width:900px) {
+  section#top.top {
+    display: grid;
+    place-items: center;
+
+    div.inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      img.top-logo {
+        width: 240px;
+        height: auto;
+      }
+
+      h2.top-txt {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
