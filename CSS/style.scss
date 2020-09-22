@@ -1,0 +1,145 @@
+@import "_variables";
+//  ===========================
+//全体の共通で使う値を設定するsassファイルです
+//  ===========================
+
+body {
+  background-color: $backGroundBase;
+  color: $fontColorPrimary;
+}
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  color: #fff;
+}
+
+section {
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.br-tab {
+  display: none;
+}
+.br-sp{
+display: none;
+}
+.btn {
+
+  display: inline-block;
+  padding: .8em 4em;
+  margin: 0 0 1em;
+  background-image: none;
+  background-color: $backGroundBase;
+  ;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.btn:hover .btn:focus {
+  outline: none;
+}
+
+.btn::-moz-foucus-inner {
+  padding: 0;
+  border: none;
+}
+
+h3.section-ttl {
+  font-size: 48px;
+  color: $fontColorGold;
+  margin: 40px auto;
+  text-align: center;
+}
+
+//z-indexを管理する＝＝＝＝＝＝＝＝＝＝＝
+$z-map: footer,
+btn,
+card,
+strCard,
+circleBanner,
+header,
+header-list,
+mask
+;
+
+@function getZIndex($name) {
+  @return index($z-map, $name)+100000;
+}
+
+header {
+  z-index: getZIndex(header);
+  box-shadow: $z-depth_box-shadow_4;
+  transform: $transform_z-depth4;
+}
+
+@media(max-width:670px) {
+  .header-list-items {
+    z-index: getZIndex(header-list);
+    box-shadow: $z-depth_box-shadow_5;
+    transform: $transform_z-depth5;
+
+  }
+}
+
+footer {
+  z-index: getZIndex(footer);
+  box-shadow: $z-depth_box-shadow_4;
+  transform: $transform_z-depth4;
+}
+
+.btn {
+  z-index: getZIndex(btn);
+  box-shadow: $z-depth_box-shadow_3;
+  transform: $transform_z-depth3;
+}
+
+
+
+.card {
+  z-index: getZIndex(card);
+  box-shadow: $z-depth_box-shadow_2;
+  transform: $transform_z-depth2;
+}
+
+.strCard {
+  z-index: getZIndex(strCard);
+  box-shadow: $z-depth_box-shadow_2;
+  transform: $transform_z-depth2;
+}
+
+.mask {
+  z-index: getZIndex(mask);
+  box-shadow: $z-depth_box-shadow_5;
+  transform: $transform_z-depth5;
+}
+.circle-banner {
+  z-index: getZIndex(circleBanner);
+  box-shadow: $z-depth_box-shadow_3;
+  transform: $transform_z-depth3;
+}
+
+
+/* タブレット用レスポンシブ===================*/
+@media(max-width:900px) {
+  .br-tab {
+    display: block;
+  }
+}
+
+/* スマホ用レスポンシブ======================*/
+@media(max-width:670px){
+.br-sp{
+display: block;
+}
+}
