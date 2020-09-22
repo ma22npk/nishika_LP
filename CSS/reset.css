@@ -3,6 +3,7 @@ Chrome/Firefox/Edgeなど、各ブラウザはそれぞれデフォルトで効�
 何もしないと見え方が微妙に変わるので、デフォルトのCSSをリセットして
 ブラウザごとの表示の差異をなくすために書くのが「リセットCSS」です。
 ================================================================*/
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,6 +16,8 @@ html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a
   font-weight: normal;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: 'Sawarabi Mincho', sans-serif, 'Noto Serif', serif, 'Lora', serif;
+  text-decoration: none;
 }
 
 header, footer, nav, section, article, aside, figure, figcaption {
