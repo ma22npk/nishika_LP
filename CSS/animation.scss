@@ -1,0 +1,180 @@
+// アニメーション ===========================
+[data-zoom-up] {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: scale(0.8);
+}
+
+[data-zoom-up].data-zoom-up {
+  opacity: 1;
+  transform: scale(1);
+}
+
+// フェードイン ===========================
+[data-fadeIn] {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: translateY(40px);
+}
+
+[data-fadeIn].is-over {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// 横のフェードイン ---------------------------
+[data-fadeId-right] {
+  transform: translateX(50px);
+  /* 最初は元の位置より左にずらしておく */
+  opacity: 0;
+  /* 最初は非表示にしておく */
+  transition: opacity 1s, transform 0.4s;
+  /* 透明度と位置を設定 */
+}
+
+/* 条件を満たしたあとに追加するクラス */
+[data-fadeId-left].is-over {
+  opacity: 1;
+  /* 表示させる */
+  transform: translateX(0);
+  /* 位置を最初の位置に戻す */
+}
+
+[data-fadeId-left] {
+  transform: translateX(-50px);
+  /* 最初は元の位置より左にずらしておく */
+  opacity: 0;
+  /* 最初は非表示にしておく */
+  transition: opacity 1s, transform 0.4s;
+  /* 透明度と位置を設定 */
+}
+
+/* 条件を満たしたあとに追加するクラス */
+[data-fadeId-right].is-over {
+  opacity: 1;
+  /* 表示させる */
+  transform: translateX(0);
+  /* 位置を最初の位置に戻す */
+}
+
+// 上下のフェードイン ---------------------------
+[data-fadeId-bottom] {
+  transform: translateY(50px);
+  /* 最初は元の位置より左にずらしておく */
+  opacity: 0;
+  /* 最初は非表示にしておく */
+  transition: opacity 1s, transform 0.4s;
+  /* 透明度と位置を設定 */
+}
+
+/* 条件を満たしたあとに追加するクラス */
+[data-fadeId-bottom].is-over {
+  opacity: 1;
+  /* 表示させる */
+  transform: translateY(0);
+  /* 位置を最初の位置に戻す */
+}
+
+[data-fadeId-top] {
+  transform: translateY(-50px);
+  /* 最初は元の位置より左にずらしておく */
+  opacity: 0;
+  /* 最初は非表示にしておく */
+  transition: opacity 1s, transform 0.4s;
+  /* 透明度と位置を設定 */
+}
+
+/* 条件を満たしたあとに追加するクラス */
+[data-fadeId-top].is-over {
+  opacity: 1;
+  /* 表示させる */
+  transform: translateY(0);
+  /* 位置を最初の位置に戻す */
+}
+
+
+/* --- 全体のBOX定義 ---------------------------------------- */
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+//自作アニメ
+[rotateIn] {
+  animation: rotateIn 0.9s infinite;
+}
+
+[rotateIn].is-over {
+  @-webkit-keyframes rotateIn {
+    0% {
+
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: rotate(-200deg);
+      transform: rotate(-200deg);
+
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotateIn {
+    0% {
+      -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: rotate(-200deg);
+      -ms-transform: rotate(-200deg);
+      transform: rotate(-200deg);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* CSS サークルバナー ==========================*/
+
+
+.circle-banner {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+  transform: translateX(100%) rotate(90deg);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.circle-banner.is-over {
+  right: 10px;
+  transform: translateX(0) rotate(0);
+}
+
+.circle-banner:hover {
+  transform: scale(1.2);
+}
