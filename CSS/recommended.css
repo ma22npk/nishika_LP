@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/*============================
+#recommended
+============================*/
+section#recommended {
+  margin-bottom: 0;
+}
+
+section#recommended.recommended div.inner h3.section-ttl {
+  color: #e8bf65;
+  font-size: 64px;
+  margin-top: 120px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-align: left;
+}
+
+section#recommended.recommended {
+  width: 100%;
+}
+
+section#recommended.recommended div.inner {
+  width: 100%;
+  margin: 0 0;
+  padding-left: 10%;
+}
+
+section#recommended.recommended div.inner h3.section-ttl {
+  color: #e8bf65;
+  font-size: 64px;
+  margin: 120px 0 40px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+section#recommended.recommended div.inner .catchCopy {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap {
+  width: 100%;
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slide-btn {
+  position: absolute;
+  content: "";
+  padding: 5px;
+  top: 40%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: block;
+  z-index: 30;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slide-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slide-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slick-prev:before,
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slick-next:before {
+  font-family: 'slick';
+  font-size: 24px;
+  line-height: 1;
+  opacity: .75;
+  -webkit-font-smoothing: antialiased;
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .prev-btn {
+  left: -5%;
+  background-image: url(/images/icons/arrow_prev.png);
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .portfolio-item {
+  cursor: pointer;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .portfolio-item .portfolio-slider-img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots li button::before {
+  font-size: 1px;
+  line-height: 20px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: white;
+  line-height: 22px;
+}
+
+/* ====================================================
+　黒丸ボタンスタイル：・・・
+==================================================== */
+.slick-dots li {
+  margin: 0 16px;
+}
+
+/* ●の間隔 */
+.slick-dots li button::before {
+  color: #000;
+}
+
+/* ● DF色 */
+.slick-dots li button:hover:before {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0.1;
+}
+
+/* ● hover色 */
+.slick-dots li.slick-active button::before {
+  color: #fff;
+}
+
+@media print, screen and (min-width: 768px) {
+  .slick-dots li button::before {
+    font-size: 16px;
+  }
+  /* ●サイズ */
+}
+
+@media screen and (max-width: 767px) {
+  .slick-dots li button::before {
+    font-size: 16px;
+  }
+  /* ●サイズ */
+}
+
+/* タブレット用レスポンシブ===================*/
+@media (max-width: 900px) {
+  .next-btn {
+    right: -10%;
+    background-image: url(/images/icons/arrow_next.png);
+  }
+  section#recommended.recommended {
+    width: 100%;
+  }
+  section#recommended.recommended div.inner {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  section#recommended.recommended div.inner h3.section-ttl {
+    color: #e8bf65;
+    font-size: 48px;
+    margin: 40px 0 20px;
+    letter-spacing: 2px;
+    line-height: 28px;
+  }
+  section#recommended.recommended div.inner .catchCopy {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap {
+    width: 100%;
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slide-btn {
+    position: absolute;
+    content: "";
+    padding: 5px;
+    top: 40%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+    z-index: 30;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slide-btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slide-btn:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slick-prev:before,
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .slick-next:before {
+    font-family: 'slick';
+    font-size: 24px;
+    line-height: 1;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .prev-btn {
+    left: -10%;
+    background-image: url(/images/icons/arrow_prev.png);
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .portfolio-item {
+    cursor: pointer;
+    padding: 0%;
+    margin: 0 auto;
+  }
+  section#recommended.recommended div.inner .portfolio-slider-wrap .portfolio-slider .portfolio-item .portfolio-slider-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=recommended.css.map */
