@@ -1,0 +1,42 @@
+// 変数の設定 ===========================
+// 色 --------------------------------
+$backGroundBase:#1e1f20; //70%
+$backGroundMain:#000; //25%
+$backGroundAccent:#f2f4ea; //5%
+$fontColorPrimary:#fff;
+$fontColorSecondary:#000;
+$fontColorGold:#e8bf65;
+
+// フォント ---------------------------
+$font-familyEN: 'Noto Serif',
+serif,
+'Lora',
+serif;
+$font-familyJP: 'Sawarabi Mincho',
+sans-serif;
+
+// boxShadowの設定 ===========================
+$boxShadowGoogleCard: 0 2px 5px rgba(0, 0, 0, 0.26);
+$boxShadowGooglePop: 0 2px 10px rgba(0, 0, 0, .2);
+// z-depth 1(深5 ~ 1浅)
+$z-depth_box-shadow_1: 0 3px 10px 1px rgba(0, 0, 0, .48);
+// z-depth 2（カード）
+$z-depth_box-shadow_2: 0 9px 30px 3px rgba(0, 0, 0, .46);
+// z-depth 3（ボタン）
+$z-depth_box-shadow_3: 0 18px 30px 3px rgba(0, 0, 0, .46);
+// z-depth 4（ヘッダー）
+$z-depth_box-shadow_4: 0 30px 50px 5px rgba(0, 0, 0, .44);
+// z-depth 5(モーダル)
+$z-depth_box-shadow_5: 0 45px 60px 6px rgba(0, 0, 0, .44);
+
+//translateZ =======================
+// z-depth 1(深5 ~ 1浅)
+$transform_z-depth1: translateZ(10px);
+// z-depth 2（カード）
+$transform_z-depth2: translateZ(20px);
+// z-depth 3（ボタン）
+$transform_z-depth3: translateZ(30px);
+// z-depth 4（ヘッダー）
+$transform_z-depth4: translateZ(40px);
+// z-depth 5(モーダル)
+$transform_z-depth5: translateZ(50px);
