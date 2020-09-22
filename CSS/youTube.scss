@@ -1,0 +1,88 @@
+@import "_variables";
+
+/*============================
+#youTube
+============================*/
+section#youTube.youTube {
+  div.inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .youtube-item {
+      width: calc((100% - 441px));
+
+      // 埋め込みYouTube ===========================
+      .youtube_wrapper {
+        position: relative;
+        padding-top: 56.25%;
+        height: 0;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    div#youTube-txt-wrapper.youTube-txt-wrapper {
+      width: 400px;
+
+      dl {
+        dt.staff-message-ttl {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: $fontColorGold;
+        }
+
+        dd.staff-message-txt {
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 22px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* タブレット用レスポンシブ===================*/
+@media(max-width:900px) {
+
+  /*============================
+#youTube
+============================*/
+  section#youTube.youTube {
+    div.inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .youtube-item {
+        width: 100%;
+      }
+
+      div#youTube-txt-wrapper.youTube-txt-wrapper {
+        margin-top: 40px;
+        width: 100%;
+
+        dl {
+          dt.staff-message-ttl {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+
+          dd.staff-message-txt {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
