@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*============================
+#foods
+============================*/
+section#foods.foods {
+  width: 100%;
+}
+
+section#foods.foods div.inner {
+  width: 80%;
+}
+
+section#foods.foods div.inner h3.section-ttl {
+  text-align: center;
+  color: #e8bf65;
+  font-size: 64px;
+  margin: 40px 0 40px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+section#foods.foods div.inner .catchCopy {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+section#foods.foods div.inner ul.foods-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item {
+  width: calc((100% - (20px * 2))/ 3 - 1px);
+  margin: 20px 0;
+  background-color: #f2f4ea;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  color: #000;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item div.item-cap {
+  width: 90%;
+  margin: 20px auto;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item div.item-cap img {
+  width: 100%;
+  height: auto;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item div.item-info {
+  padding: 24px;
+  text-align: center;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item div.item-info div.h3.item-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item div.item-info div.item-price {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section#foods.foods div.inner ul.foods-items li.foods-item div.item-info p.item-txt {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* タブレット用レスポンシブ===================*/
+@media (max-width: 900px) {
+  /*============================
+#foods
+============================*/
+  section#foods.foods {
+    width: 100%;
+  }
+  section#foods.foods div.inner {
+    width: 80%;
+  }
+  section#foods.foods div.inner h3.section-ttl {
+    text-align: center;
+    color: #e8bf65;
+    font-size: 40px;
+    margin: 40px 0 40px;
+    letter-spacing: 2px;
+    line-height: 28px;
+  }
+  section#foods.foods div.inner .catchCopy {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  section#foods.foods div.inner ul.foods-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #f2f4ea;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a {
+    color: #000;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a div.item-cap {
+    margin-bottom: 8px;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a div.item-cap img {
+    width: 100%;
+    height: auto;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a div.item-info {
+    padding: 8px 16px;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a div.item-info div.h3.item-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a div.item-info div.item-price {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  section#foods.foods div.inner ul.foods-items li.foods-item a div.item-info p.item-txt {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=foods.css.map */

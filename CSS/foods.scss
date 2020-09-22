@@ -1,0 +1,157 @@
+@import "_variables";
+
+/*============================
+#foods
+============================*/
+section#foods.foods {
+  width: 100%;
+
+  div.inner {
+    width: 80%;
+
+    h3.section-ttl {
+      text-align: center;
+      color: $fontColorGold;
+      font-size: 64px;
+      margin: 40px 0 40px;
+      letter-spacing: 2px;
+      line-height: 28px;
+    }
+
+    .catchCopy {
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+
+
+    ul.foods-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      li.foods-item {
+        width: calc((100% - (20px * 2))/ 3 - 1px);
+        margin: 20px 0;
+        background-color: $backGroundAccent;
+        box-shadow: $boxShadowGoogleCard;
+        color: $fontColorSecondary;
+
+        div.item-cap {
+          width: 90%;
+          margin: 20px auto;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        div.item-info {
+          padding: 24px;
+          text-align: center;
+
+          div.h3.item-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 4px;
+          }
+
+          div.item-price {
+            margin-bottom: 8px;
+            font-size: 24px;
+            font-weight: bold;
+          }
+
+          p.item-txt {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+/* タブレット用レスポンシブ===================*/
+@media(max-width:900px) {
+
+  /*============================
+#foods
+============================*/
+  section#foods.foods {
+    width: 100%;
+
+    div.inner {
+      width: 80%;
+h3.section-ttl {
+      text-align: center;
+      color: $fontColorGold;
+      font-size: 40px;
+      margin: 40px 0 40px;
+      letter-spacing: 2px;
+      line-height: 28px;
+    }
+
+    .catchCopy {
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 2px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+
+
+      ul.foods-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li.foods-item {
+          width: 300px;
+          margin: 20px auto;
+          background-color: $backGroundAccent;
+
+          a {
+            color: $fontColorSecondary;
+
+            div.item-cap {
+              margin-bottom: 8px;
+
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            div.item-info {
+              padding: 8px 16px;
+
+              div.h3.item-name {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 4px;
+              }
+
+              div.item-price {
+                margin-bottom: 8px;
+                font-size: 24px;
+                font-weight: bold;
+              }
+
+              p.item-txt {
+                font-size: 16px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
